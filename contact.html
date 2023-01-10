@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>Contact Details</title>
+
+    </head>
+
+    <body>
+
+        <!--forms are the html tag used to import the submit,email,text,password attributes for use 
+        
+        to import these kind of things we have to use "input" to give name to that input use "label"
+    
+         in forms the "action" is to make sure when hit any action in input it redirect to that link in the action
+        
+        the "method" posts the data into the link that is in the action
+    
+        "ectype" in form , it sends the data in what you want
+
+        in "forms" in "action" if you entered the "mailto:anyrandommail" after doing action it compose a mail to the random mail
+        with the data you entered in name,email,and text.
+
+        in "input" the "name" attribute is used for the data it classifies the data under the name you entered in
+        
+        name attribute.
+    -->
+
+        <h3>Contact Details</h3>
+      <ul>
+        <li>Email:<strong>saikoushik_ananthoju@srmap.edu.in</strong></li>
+        <li>Phone Number:<strong>814352850</strong></li>
+      </ul>
+
+
+      <form action="mailto:saikoushik_ananthoju@srmap.edu.in" method="post" enctype="text/plain">
+
+        <label for="Name">Your Name:</label>
+        <input type="text" name="YourName">
+        <br>
+        <label for="email">Your Email:</label>
+        <input type="email" name="YourEmail"><br>
+        <label for="textarea">Text here:</label><br>
+        <textarea name="Message" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+      </form>
+
+
+        
+    </body>
+
+</html>
